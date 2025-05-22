@@ -1,0 +1,65 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.header{
+	background: #1c1c30;
+    float: left;
+    width: 100%;
+    height: 70px;
+}
+	
+.menubar {
+	position: relative;
+	margin-top: 2.5px;
+    font-family: fantasy;
+    font-size: 20px;
+    float: left;
+    width: 25%;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    height: 45px;
+	cursor: pointer;
+}
+.menubar:hover{
+	background: #060608;
+    border-radius: 10px;
+}
+.menubar:active {
+    background: #63637d;
+	border-radius: 10px;
+}
+
+.body{
+	background: #b7b7d0;
+    height: 700px;
+    width: 100%;
+	float: left;
+}
+
+.myimg{
+	
+}
+
+.mymenu{
+	position: absolute;
+	background: #1c1c30;
+	display: none;
+	width:100%;
+	height:auto;
+	
+}
+
+
+.menubar:hover .mymenu{
+	top: 100%;
+	display: block;
+
+}
+.dropbar {
+    padding: 10px;
+    color: white;
+    text-align: center;
+}

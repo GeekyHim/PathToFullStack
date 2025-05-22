@@ -1,0 +1,44 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.header{
+    float: left;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+}
+
+.logo{
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+    background-color: white;
+    width: 10%;
+    height: 100px;
+}
+
+.nav_bar{
+    background-color: white;
+    float: right;
+    width: 40%;
+    margin-top: 25px;
+}
+.nav_ele{
+    text-decoration-color: black;
+    font-family: arial;
+    float: right;
+    width: 20%;
+    text-align: center;
+    text-transform: capitalize;
+}
+.nav_ele:hover{
+    text-decoration: underline;
+}
+
+
+@font-face {
+    font-family: arial;
+    src: url(font/ARIAL.TTF);
+}

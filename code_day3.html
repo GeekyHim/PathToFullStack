@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>  
+<head>
+<style>
+    *
+    {
+      margin:0px;
+      padding:0px;
+    }
+
+    /*with Div */
+.m {
+    background: #323b6c;
+    height: 36px;
+    width: 20%;
+    float: left;
+    color: white;
+    text-align: center;
+    padding-top: 21px;
+    /* align-items: center; */
+}
+div#menu {
+    background: #323b6c;
+        height: 57px;
+
+    width: 100%;
+}
+.m:hover {
+    cursor: pointer;
+    border-radius: 18px;
+  background:#202748;
+}
+.m:active
+{
+background:red;
+}
+.m:visited
+{
+  background:yellow;
+}
+.box{
+  height:200px;
+  width:200px;
+  background:red;
+}
+.d{
+  height:100px;
+  width:100%;
+  background:red;
+  display:none;
+}
+#dr:hover .d
+{
+  display:block;
+}
+ul{
+  list-style:none;
+}
+
+ul li
+{
+  width:20%;
+  height:50px;
+  text-align:center;
+  background:Red;
+  float:left;
+}
+
+ul li:hover 
+{
+  background:green;
+  cursor:pointer;
+}
+
+ul li:hover ul li
+{
+  display:block;
+}
+ul li ul li{
+display:none;
+  width:100%!important;
+}
+</style>
+</head>
+<body >
+
+<div class="header" id="menu">
+<div class="m">Home</div>
+<div class="m" id="dr">About
+<div class="d">
+</div>
+
+</div>
+<div class="m">Contact</div>
+<div class="m">Profile</div>
+<div class="m">Login</div>
+</div>
+
+
+<ul>
+	<li>Home</li>
+	<li>Home
+		<ul>
+			<li>home 2</li>
+			<li>home 2</li>
+			<li>home 2</li>
+			<li>home 2</li>
+		</ul>
+
+	</li>
+	<li>Home</li>
+	<li>Home</li>
+	<li>Home</li>
+</ul>  
+
+</body>
+</html>
