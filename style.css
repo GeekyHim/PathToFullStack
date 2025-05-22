@@ -1,0 +1,53 @@
+*{
+	margin: 0px;
+}
+
+.outerdiv{
+max-width : 1366px;
+width:100%;
+height: auto;
+
+}
+
+.header{
+height:100px;
+width: 100%;
+background : red;
+
+float: left;
+}
+.center{
+height:700px;
+width: 80%;
+background : green;
+float: left;
+}
+.left,.right{
+height:700px;
+width:10%;
+background : blue;
+float: left;
+}
+.logo{
+	background:white;
+	height:50px;
+	width:50px;
+	margin-top:10px;
+	margin-left:10px;
+	float:left;
+
+}
+
+.head{
+	background:white;
+	height:50px;
+	width:600px;
+	margin-top:10px;
+	margin-left:15px	;
+	float:left;
+}
+.profile{
+	float:left;
+}
+
+
