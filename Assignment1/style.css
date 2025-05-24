@@ -3,6 +3,11 @@
     padding: 0%;
 }
 
+.body {
+    width: 100%;
+    height: 1000px;
+}
+
 .header{
     float: left;
     width: 100%;
@@ -11,8 +16,8 @@
 }
 
 .logo{
-    margin-top: 5px;
-    margin-left: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
     float: left;
     background-color: white;
     width: 10%;
@@ -37,6 +42,71 @@
     text-decoration: underline;
 }
 
+.img1{
+    height: 450px;
+    width: 60%;
+    float: left;
+    background-color: aqua;
+}
+
+#myContainer1{
+    height: 450px; 
+    background-image: url(img_1.jpg);
+    width: 75%;
+    float: left;
+    background-color: aqua;
+}
+
+.box1{
+    float: right;
+    height: 650px;
+    width: 23.5%;
+    background-color: #10105a;
+}
+
+.inside_box_1 {
+    float: left;
+    font-family: arial;
+    color: #f5780c;
+    font-size: 40px;
+    margin-left: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+.inside_cont_1 {
+    float: left;
+    font-family: arial;
+    color: white;
+    font-size: 20px;
+    margin-left: 12px;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.inside_cont_2 {
+    float: left;
+    font-family: arial;
+    color: #b7afaf;
+    font-size: 18px;
+    margin-left: 12px;
+    font-weight: 600;
+    width: 90%;
+    margin-bottom: 15px;
+}
+
+.line_1 {
+    margin-bottom: 30px;
+    margin-left: 2.5%;
+    width: 95%;
+    height: 3px;
+    background-color: #b7b1b185;
+    float: left;
+}
 
 @font-face {
     font-family: arial;
