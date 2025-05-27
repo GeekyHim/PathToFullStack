@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <script>
+        function validate(){
+            let msg = document.getElementById('msg')
+            let user = document.getElementById('user').value;
+            if( user !='') msg.innerHTML= "All is OK!"
+            else msg.innerHTML="*Please Enter Value*"
+        }
+    </script>
+    <style>
+        p#msg{
+            color: red;
+            font-size: 15px;
+        }
+        .box {
+            float: left;
+            width: 99%;
+            height: 68px;
+            background-color: #363650;
+            padding-left: 10px;
+            padding-top: 10px;
+            margin-right: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- on value -> ok 
+    else -> pls enter value -->
+    <div class = box>
+    <input type = text id = user  />
+    <input type = button id = myButton text = 'Click Me' value = Validate onclick = validate() /> 
+    <P id = msg> </P>
+    </div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+JS - Client Side Scripting lang
+Clinet? -> browser
+
+Js - 	Internal 
+	external 
+<script> </script> <-- tag for js

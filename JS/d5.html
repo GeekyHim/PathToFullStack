@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script>
+        function taking_input(){
+            let user = document.getElementById('user').value;
+        // alert(user);
+            document.getElementById('details').innerHTML="The Username is "+user
+        }
+
+        function canVote(){
+            let msg = document.getElementById('msg')
+            let age = document.getElementById('age').value;
+            if(age<18) msg.innerHTML="You Cannot Vote"
+            else msg.innerHTML = 'You can Vote :D'
+        }
+    </script>
+</head>
+<body>
+    
+    <!-- <input type = 'text' name = 'username' id = 'user'/>
+
+    <input type = 'button' value = 'click me' name = 'myButton' onclick="taking_input()"/>
+
+    <P id = 'details'></P>
+ -->
+
+    <input type = 'text' name = 'username' id = 'age'/>
+
+    <input type = 'button' value = 'click me' name = 'myButton' onclick="canVote()"/>
+    <p id = 'msg'></p>
+
+
+</body>
+</html>
