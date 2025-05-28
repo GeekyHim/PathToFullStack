@@ -1,0 +1,12 @@
+1. phele j query ka link daalo script me
+
+2. phir script me likhte hai code
+
+3. basic syntax
+
+
+$(selector).event(function(){
+    //code
+});
+
+// fa fa-times-circle-o
