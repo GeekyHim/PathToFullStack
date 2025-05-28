@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        
+    function checkPass(){
+        let pass = document.getElementById('pass').value
+        let msg = document.getElementById('msg')
+        let count = pass.length
+        if(count<4){
+            document.getElementById('weak').style.background='#bdbdb5'
+            document.getElementById('ok').style.background='#bdbdb5'
+            document.getElementById('ok2').style.background='#bdbdb5'
+            document.getElementById('strong').style.background='#bdbdb5'
+        }
+        else if(count>= 4 && count<=6){
+            document.getElementById('weak').style.background='red'
+            document.getElementById('ok').style.background='#bdbdb5'
+            document.getElementById('ok2').style.background='#bdbdb5'
+            document.getElementById('strong').style.background='#bdbdb5'
+            
+        }
+        else if(count> 6 && count<=8){
+            document.getElementById('weak').style.background='yellow'
+            document.getElementById('ok').style.background='yellow'
+            document.getElementById('ok2').style.background='yellow'
+            document.getElementById('strong').style.background='#bdbdb5'
+        }
+        else if(count>8) {
+            document.getElementById('weak').style.background='green'
+            document.getElementById('ok').style.background='green'
+            document.getElementById('ok2').style.background='green'
+            document.getElementById('strong').style.background='green'
+        }
+        let checkNum = /^\d+$/;
+        let checkCap = /[A-Z]/;
+        let checkSplChar = /[`~!@#$%^&*()_+\[\]{};:'"\\|,.<>\/?]/;
+        if(!checkNum.test(pass)){
+            msg.style.Color='red'
+            msg.innerHTML="Number in password."
+        }
+        else{
+            msg.style.Color='green'
+            msg.innerHTML="Number in password."
+        }
+
+        if(!checkCap.test(pass)){
+            msg.style.Color='red'
+            msg.innerHTML="Captial Character in password."
+        }
+        else{
+            msg.style.Color='green'
+            msg.innerHTML="Captial Character in password."
+        }
+
+        if(!checkSplChar.test(pass)){
+            msg.style.Color='red'
+            msg.innerHTML="Special Character in password."
+        }
+        else{
+            msg.style.Color='green'
+            msg.innerHTML="Special Character in password."
+        }
+    }
+
+
+    </script>
+    <title>Password</title>
+    <style>
+        .outerbar {
+            width: 100%;
+            height: 15px;
+            border-radius: 5px;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+
+        .bar {
+            width: 20%;
+            float: left;
+            height: 7px;
+            background-color: #bdbdb5;
+            margin: 3px;
+            border-radius: 5px;
+        }
+
+        .theBox{
+            background-color: #0e0e63;
+            width: 40%;
+            height: 100px;
+        }
+
+        #pass{
+            margin-left: 35px;
+            margin-top: 10px;
+        }
+
+        #msg{
+            float: left;
+            font-size: 6px;
+            margin-left: 15px;
+            width: auto;
+            background-color: white;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class = theBox>
+        <div>
+        <input id = pass type = text placeholder="Enter Password" onkeyup="checkPass()"/>
+    </div>
+    <div class = outerbar>
+        <div class = bar id = 'weak'></div>
+        <div class = bar id = 'ok'></div>
+        <div class = bar id = 'ok2'></div>
+        <div class = bar id = 'strong'></div>
+    </div>
+    <div class = checks>
+        <p id = msg></p>
+    </div>
+    </div>
+</body>
+</html>
