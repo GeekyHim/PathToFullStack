@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+			.a{
+				background:red;
+				height:200px;
+				width:200px;
+			}
+</style>
+</head>
+<body>
+<input type="text" class="username"/>
+<input type="button" class="ok" value="Click me"/>
+<p class="msg"></p>
+<script>
+				$(".ok").click(function(){
+					var username=$(".username").val();
+					//alert(username);
+					$(".msg").html(username); // like innerHTML 
+                    // puts the value/ content in msg class wala element
+				});
+</script>
+</body>
+</html>

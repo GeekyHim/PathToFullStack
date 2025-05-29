@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+
+			.a{
+
+				background:red;
+
+				height:200px;
+
+				width:200px;
+
+			}
+</style>
+</head>
+<body>
+<button class="b">Click Me!</button>
+<div class="a">
+<p>testing</p>
+</div>
+<script>
+
+				$(".b").click(function(){
+
+					$(".a").animate({
+
+						width:'400px',
+
+						background:'green', // donesnt work with background  
+
+						fontSize:'3em'
+
+					});
+
+				});
+</script>
+</body>
+</html>
+ 

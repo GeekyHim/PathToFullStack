@@ -10,3 +10,11 @@ $(selector).event(function(){
 });
 
 // fa fa-times-circle-o
+
+
+Changing val using attr
+
+$().click(function(){
+    $(.imgClass).attr("src","new Src Value")
+    
+});
