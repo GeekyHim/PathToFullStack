@@ -1,0 +1,29 @@
+🔷 Task 1: Toggle Paragraph Visibility
+Create a web page with a button labeled "Toggle Description" and a paragraph of text. When the button is clicked, the paragraph should toggle between visible and hidden using jQuery.
+
+🔶 Task 2: Color Picker Box
+Create a web page with:
+A color input field (e.g., a color picker)
+A box (div) of 200x200 pixels
+When the user selects a color, the background color of the box should change to the selected color using JavaScript or jQuery.
+
+🔷 Task 3: Simple To-Do List
+Build a basic To-Do list using HTML, CSS, and jQuery. Requirements:
+An input field to enter a task
+An "Add" button
+A list that displays the tasks
+Each task should have a "Delete" button to remove it
+
+🔶 Task 4: Form Validation
+Create a simple HTML registration form with fields:
+Name
+Email
+Password
+Use JavaScript or jQuery to validate:
+All fields are required
+Email should be in proper format
+Password must be at least 6 characters
+Show appropriate error messages without refreshing the page.
+
+
+🔶 Task 5: CLONE
